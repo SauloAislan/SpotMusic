@@ -1,7 +1,7 @@
-package src.main.java.br.com.sauloaislan.dao;
+package br.com.sauloaislan.dao;
 
 import org.springframework.stereotype.Repository;
-import src.main.java.br.com.sauloaislan.domain.Playlist;
+import br.com.sauloaislan.domain.Playlist;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

@@ -1,6 +1,6 @@
-package src.main.java.br.com.sauloaislan.dao;
+package br.com.sauloaislan.dao;
 
-import src.main.java.br.com.sauloaislan.domain.Musica;
+import br.com.sauloaislan.domain.Musica;
 
 import java.util.List;
 

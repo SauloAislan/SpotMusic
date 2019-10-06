@@ -1,10 +1,10 @@
-package src.main.java.br.com.sauloaislan.service;
+package br.com.sauloaislan.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import src.main.java.br.com.sauloaislan.dao.PlaylistDao;
-import src.main.java.br.com.sauloaislan.domain.Playlist;
+import br.com.sauloaislan.dao.PlaylistDao;
+import br.com.sauloaislan.domain.Playlist;
 
 import java.util.List;
 

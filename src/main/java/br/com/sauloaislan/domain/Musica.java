@@ -1,4 +1,4 @@
-package src.main.java.br.com.sauloaislan.domain;
+package br.com.sauloaislan.domain;
 
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.Range;

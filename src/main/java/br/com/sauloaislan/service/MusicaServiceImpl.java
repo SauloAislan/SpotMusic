@@ -1,10 +1,10 @@
-package src.main.java.br.com.sauloaislan.service;
+package br.com.sauloaislan.service;
 
+import br.com.sauloaislan.dao.MusicaDao;
+import br.com.sauloaislan.domain.Musica;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import src.main.java.br.com.sauloaislan.dao.MusicaDao;
-import src.main.java.br.com.sauloaislan.domain.Musica;
 
 import java.util.List;
 
@@ -39,7 +39,7 @@ public class MusicaServiceImpl implements MusicaService {
     @Override
     @Transactional(readOnly = true)
     public Musica recuperarPorPlaylistIdEMusicaId(long playlistId, long musicaId) {
-        return musicaDao.recuperarPorPlaylistIdEMusicaId(musicaId, playlistId);
+        return musicaDao.recuperarPorPlaylistIdEMusicaId(playlistId, musicaId);
     }
 
     @Override

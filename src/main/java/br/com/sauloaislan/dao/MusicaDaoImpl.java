@@ -1,6 +1,7 @@
-package src.main.java.br.com.sauloaislan.dao;
+package br.com.sauloaislan.dao;
 
-import src.main.java.br.com.sauloaislan.domain.Musica;
+import br.com.sauloaislan.domain.Musica;
+import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -12,6 +13,7 @@ import java.util.List;
  * inside the package - src.main.java.br.com.sauloaislan.dao
  **/
 
+@Repository
 public class MusicaDaoImpl implements MusicaDao {
 
     @PersistenceContext
@@ -31,8 +33,8 @@ public class MusicaDaoImpl implements MusicaDao {
 
     @Override
     public Musica recuperarPorPlaylistIdEMusicaId(long playlistId, long musicaId) {
-        return em.createQuery("select m from Musica m where m.playlist.id = :playlistId and" +
-                "m.id = :musicaId", Musica.class).setParameter("playlistId", playlistId)
+        return em.createQuery("select m from Musica m where m.playlist.id = :playlistId and m.id = :musicaId", Musica.class)
+                .setParameter("playlistId", playlistId)
                 .setParameter("musicaId", musicaId)
                 .getSingleResult();
     }
